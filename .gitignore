@@ -242,15 +242,7 @@ ModelManifest.xml
 .paket/paket.exe
 
 # FAKE - F# Make
-.fake
-/quenue
+.fake/
 /tree
-/源1.cpp
-/源.cpp
-/pratice.h
-/main.cpp
-/header2.h
-/header1.h
-/cprimerplus.sln
-/ConsoleApplication1.vcxproj.filters
-/ConsoleApplication1.vcxproj
+*.vcxproj
+*.filters
