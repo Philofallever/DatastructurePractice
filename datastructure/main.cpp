@@ -2,7 +2,7 @@
 #include "stack.h"
 
 
-/*stack smoke test*//*
+/*//stack smoke test
 int main(void)
 {
 	Stack teststack;
@@ -36,6 +36,33 @@ int main(void)
 }
 */
 
+/* //n 阶汉诺塔问题
+void move(char src, int disk, char dst)
+{
+	static int step = 1;
+	printf("step %d:move disk %d on src:%c to dst:%c\n", step++,disk, src, dst);
+}
+//将塔座x上按直径由小到大且自上而下编号为1至n的n个圆盘按照规则搬到塔座z上，y作为辅助
+void hanoi(int n, char x, char y, char z)
+{
+	if (n == 1)
+	{
+		move(x, 1, z);
+	}
+	else
+	{
+		hanoi(n - 1, x, z, y);
+		move(x, n, z);
+		hanoi(n - 1, y, x, z);
+	}
+}
+int main(void)
+{
+	int disk;
+	puts("Enter disk num:");
+	scanf_s("%d", &disk);
+	hanoi(disk, 'X', 'Y', 'Z');
+}*/
 
 
 
