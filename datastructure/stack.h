@@ -6,7 +6,7 @@
 typedef struct Elemt
 {
 	int iValue;
-	char cValue[10];
+	float fValue;
 } Elemt;
 
 typedef struct Stack
@@ -41,4 +41,4 @@ status push(Stack * pstack, Elemt e);
 status pop(Stack * pstack, Elemt * e);
 
 //traverse a stack by use void * visit();
-status traverse(Stack * pstack,void * visit())
+status traverse(Stack * pstack, void * visit());
