@@ -1,6 +1,6 @@
 #include <stdio.h>
+#include "LinkQueue.h"
 #include "stack.h"
-
 
 /*//stack smoke test
 int main(void)
@@ -64,6 +64,20 @@ int main(void)
 	hanoi(disk, 'X', 'Y', 'Z');
 }*/
 
+/*∂”¡–≤‚ ‘*/
+int main(void)
+{
+	LinkQueue testlinkqueue;
+	puts("====init a queue====");
+	initQueue(&testlinkqueue);
+	printf("queue length = %d\n", getLength(&testlinkqueue));
+
+	//QElemt elemt1 = { 1,1.0 };
+	//puts("====enqueue elment 1====");
+	//enQueue(plinkqueue, &elemt1);
+	//printf("queuelength = %d ", getLength(plinkqueue));
+
+}
 
 
 

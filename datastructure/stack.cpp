@@ -23,7 +23,7 @@ status destoryStack(Stack * pstack)
 	pstack->top = nullptr;
 	free(pstack->base);
 	pstack->base = nullptr;
-	free(pstack);
+	free(pstack);                                                                                                   
 	pstack = nullptr;
 	return OK;
 }
