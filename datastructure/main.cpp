@@ -64,7 +64,7 @@ int main(void)
 	hanoi(disk, 'X', 'Y', 'Z');
 }*/
 
-/*队列测试*/
+/*队列测试
 int main(void)
 {
 	LinkQueue testlinkqueue;
@@ -77,7 +77,7 @@ int main(void)
 	//enQueue(plinkqueue, &elemt1);
 	//printf("queuelength = %d ", getLength(plinkqueue));
 
-}
+}*/
 
 
 
